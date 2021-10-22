@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Pemasanan Donat|Donutzz</title>
+</head>
+<body style="text-align: left; background-color: grey;">
+    <h1 style="color: white;
+        font-family:fantasy;">Pemasanan Donat | Donutzz</h1>
+    <P style="margin-left:10px; 
+        font-family:Arial, Helvetica, sans-serif;">Silakan isi form di bawah ini untuk melakukan pemesanan:</P>
+    <form action="pesanan_donat.html">
+        <div style="margin-left: 20px;">
+            <label for="nama">Nama Pemesan : </label><br>
+            <input type="text" id="nama" name="nama" value=" "><br>
+            <label for="alamat"> Alamat:</label><br>
+            <input type="text" id="alamat" name="alamat" value=" "><br>
+            <label for="nomorhp">Nomor Handphone : </label><br>
+            <input type="text" id="nomorhp" name="nomorhp" value=" "><br>
+            <label for="e-mail">Alamat Email : </label><br>
+            <input type="email" id="e-mail" name="e-mail" value=" "><br>
+            <p>Catatan : </p>
+                <textarea name="catat" rows="10" cols="50"></textarea>
+            <br>
+            <br>
+
+            <p style="color: white; 
+                font-family:Arial, Helvetica, sans-serif;">PESANAN</p>
+            <p style="font-family:Arial, Helvetica, sans-serif; 
+                margin-left:3px;"> Pilih Salah Satu Ukuran Donat : </p>
+            <input type="radio" name="ukuran box" value="kecil">
+            <label>Kecil</label><br>
+            <input type="radio" name="ukuran box" value="sedang">
+            <label>Sedang</label><br>
+            <input type="radio" name="ukuran box" value="besar">
+            <label>Besar</label>
+            <br>
+
+            <p style="color: white;
+                font-family:Arial, 
+                Helvetica, sans-serif;">Pilih Rasa Donat(Pilih sebanyak yang kamu mau) : </p>
+            <input type="checkbox" id="rasa1" name="rasa1" value="Tiramisu">
+            <label for="rasa1"> Tiramisu </label><br>
+            <input type="checkbox" id="rasa2" name="rasa2" value="Taro">
+            <label for="rasa2"> Taro </label><br>
+            <input type="checkbox" id="rasa3" name="rasa3" value="Coklat">
+            <label for="rasa3"> Coklat </label><br>
+            <input type="checkbox" id="rasa4" name="rasa4" value="Bluberry">
+            <label for="rasa4"> Bluberry</label><br>
+            <input type="checkbox" id="rasa5" name="rasa5" value="Strawberry">
+            <label for="rasa5"> Strawberry </label><br>
+            <input type="checkbox" id="rasa6" name="rasa6" value="Vanila">
+            <label for="rasa6"> Vanila </label><br>
+            <input type="checkbox" id="rasa7" name="rasa7" value="Keju">
+            <label for="rasa7"> Keju </label>
+            <br>
+            <br>
+
+            <p style="color: white;"><b>Jumlah</b></p>
+            <label>Berapa Banyak Donat :
+                <input type="number" name="donat" min="1" max="10"></label>
+                <br><br>
+            <input type="submit" value="kirim" name="proses">
+            <input type="reset" value="clear">
+        </div>
+    </form>
+</body>
+</html>
