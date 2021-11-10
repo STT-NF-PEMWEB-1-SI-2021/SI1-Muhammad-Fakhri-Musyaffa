@@ -1,0 +1,46 @@
+div.awal{
+    padding: 70px;
+}
+div.photo{
+    float: left; 
+    padding-top: 15px;
+}
+img{
+    padding: 20px; 
+    width: 180px; 
+    height: 230px;
+}
+div.profile{
+    float:left; 
+    padding-top: 15px; 
+    margin-left: 25px;
+}
+div.category{
+    float:right; 
+    padding-top: 15px; 
+    margin-right: 20px;
+}
+article{
+    padding-top: 15px;
+    margin-left: 25px; 
+    margin-right: 25px;
+}
+div.video{
+    margin-left: 25px; 
+    float: left;
+}
+video{
+    width: 330px;
+    height: 190px;
+}
+div.bawah{
+    margin-left: 80px; 
+    float: left;
+}
+fieldset.attachment{
+    height: 160px; 
+    width: 280px; 
+    margin-right: 25px; 
+    float: right; 
+    padding-bottom: 10px;
+}
