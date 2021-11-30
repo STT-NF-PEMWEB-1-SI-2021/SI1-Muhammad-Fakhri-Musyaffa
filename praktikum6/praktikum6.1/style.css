@@ -1,0 +1,23 @@
+#awal{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    align-items: center;
+}
+#akhir{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    align-items: center;
+}
+.box {
+    justify-content: space-around;
+    width: 50%;
+    display: flex;
+    padding: 1em;
+}
+img{
+    width: 250px;
+    height: 150px;
+    border-radius: 7px;
+}   

@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: row;
+    text-align: left;
+}
+#pertama{
+    display: flex;
+}
+nav{
+    background: #ff420e;
+    font-size: 25px;
+    width: 40vh;
+    height: 100vh;
+}
+.kedua{
+    display: flex;
+    height: 60vh;
+}
+article{
+    background: #89da59;
+    font-size: 25px;
+    width: 125vh;
+}
+aside{
+    background: #80bd9e;
+    font-size: 25px;
+    width: 45vh ;
+}
+header, footer{
+    background: #f98866;
+    height: 20vh;
+    width: 170vh ;
+}
+header,footer,article,nav,aside{
+    padding: 1em;
+}
