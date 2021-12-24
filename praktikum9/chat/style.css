@@ -1,0 +1,25 @@
+#fcb {
+    position: relative;
+    border: 2px solid;
+    height: 560px;
+    width: 99%;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+#Pesan {
+    border: 2px solid;
+    position: absolute;
+    bottom: 4px;
+    width: 99%;
+}
+#tampilan {
+    width: 99%;
+    height: 340px;
+}
+#inmsg {
+    width: 85%;
+}
+#kirim{
+    border: 2px solid;
+    width: 13%;
+}

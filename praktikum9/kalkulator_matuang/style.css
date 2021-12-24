@@ -1,0 +1,21 @@
+fieldset{
+    width: 98%;
+    justify-items: center;
+    background-color: #98d8c6;
+    border: 2px solid #5bc8ac;
+}
+form{
+    padding: 2em 5em;
+    margin-left: 15%;
+}
+td{
+    border: 2px solid #000
+}
+input{
+    width: 350px;
+}
+.text{
+    text-align: center;
+    padding: 10px;
+    
+}

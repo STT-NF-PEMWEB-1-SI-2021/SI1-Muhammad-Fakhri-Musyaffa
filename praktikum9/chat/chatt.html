@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="fcb">
+    <div id="isi" onsubmit="kirim()">
+        <div id="tampilan"></div>
+        <form id="Pesan">
+            <input type="text" id="inmsg">
+            <button id="kirim">KIRIM</button>
+        </form>
+    </div>
+</div>
+<script>
+    let krmpesan = document.getElementById("Pesan");
+    let msgr = document.getElementById("tampilan");
+    let chat = document.getElementById("inmsg");
+    function handleForm(event){
+        event.preventDefault();
+    }
+    krmpesan.addEventListener('submit', handleForm);
+
+    function kirim(){
+        msgr.innerHTML += "<br>" + chat.value + "<br>";
+        kirimPesan.reset()
+    }
+</script>
+</body>
+</html>
