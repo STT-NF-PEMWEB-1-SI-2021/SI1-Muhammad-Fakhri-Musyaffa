@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+</head>
+
+<body>
+    <div>
+        <h2 style="text-align: center;">Form Tiket Kerata Api</h2>
+
+        <div>
+            <form name="cekIn" method="post" action="success.html" onsubmit=" return validasiform()">
+                <label>Nama Pelanggan :</label><br>
+                <input type="text" name="nama" class="form-control" placeholder="Max 30 Character" required maxlength="30" id="nama">
+                <br>
+                <label>Email :</label><br>
+                <input type="email" name="email" class="form-control" placeholder="example@gmail.com" required id="email">
+                <br>
+                <label>Jam Keberangkatan :</label>
+                <input type="time" name="jambrp" id="jambrp">
+                <br>
+                <label>Tujuan Keberangkatan :</label><br>
+                <input type="text" name="tujuan" placeholder="Kota Tujuan Keberangkatan" id="tujuan">
+                <br>
+                <label>Jumlah Tiket :</label>
+                <select name="tiket" class="form-control" id="tiket">
+                        <option disabled selected>Jumlah Tiket</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                </select>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validasiform(forms) {
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+            let jambrp = document.getElementById("jambrp").value;
+            let tujuan = document.getElementById("tujuan").value;
+            let tiket = document.getElementById("tiket").value;
+            
+            if (document.forms["cekIn"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["cekIn"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["cekIn"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["cekIn"]["email"].focus();
+                return false;
+            }
+            if (document.forms["cekIn"]["jambrp"].selectedIndex == "") {
+                alert("Masukan Jam Keberangkatan");
+                document.forms["cekIn"]["jambrp"].focus();
+                return false;
+            }
+            if (document.forms["cekIn"]["tujuan"].value == "") {
+                alert("Tujuan Tidak Boleh Kosong");
+                document.forms["cekIn"]["tujuan"].focus();
+                return false;
+            }
+            if (document.forms["cekIn"]["tiket"].selectedIndex < 1) {
+                alert("Pilih Jumlah Tiket Anda");
+                document.forms["cekIn"]["tiket"].focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
